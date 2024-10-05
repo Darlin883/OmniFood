@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    height: 930px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("/Images/Omnifood Contents/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+body{
+    margin:0;
+}
+.top-bar{
+    width: 2200px;
+    height: 200px;
+}
+.img-nav{
+    margin-left: 12.5%;
+    width: 110px;
+    height: 110px;
+    margin-top: 1.5%;
+    background-image: (rgba(0,0,0,0.7), rgba(0,0,0,0.7), url("/Images/Omnifood Contents/logo.png"));
+    filter: contrast(0%);
+}
+.nav-bar{
+    /* positioning */
+    display: flex;
+    float:right;
+    margin-right: 210px;
+    font-size: 20px;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 4%;
+    font-size: 23px;
+    width:650px;
+    /* font */
+    font-family: "Afacad Flux", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    
+}
+.top-bar a{
+    color: white;
+    filter: none;
+    text-decoration: none;
+}
+ul{
+ list-style:none;
+}
