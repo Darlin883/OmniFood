@@ -5,14 +5,45 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+h1,h2{
+    font-family: "Roboto", sans-serif;
+    font-weight: 240;
+    font-style: normal;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 5%;
+}
+h3{
+    font-family: "Roboto", sans-serif;
+    font-weight: 240;
+    font-style: normal;
+}
+h2:after{
+    display: block;
+    height: 2px;
+    text-align: center;
+    width: 100px;
+    background-color: #e67e22;
+    content: " ";
+    margin: auto;
+    margin-top: 30px;
+}
+.p-selection{
+    font-family: "Roboto", sans-serif;
+    font-weight: 240;
+    font-style: normal;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
+}
 .header{
-    height: 835px;
+    height: 960px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("/Images/Omnifood Contents/hero.jpg");
     background-size: cover;
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -27,10 +58,10 @@ body{
 }
 
 .img-nav{
-    margin-left: 12.5%;
+    margin-left: 12.4%;
     width: 100px;
     height: 100px;
-    margin-top: 1.5%;
+    margin-top: 1.4%;
     position: absolute;
     background-image: url("/Images/Omnifood Contents/logo.png");
     background-size: cover;
@@ -55,13 +86,16 @@ body{
     font-style: normal;
     
 }
+
 .top-bar a{
     color: white;
     filter: none;
     text-decoration: none;
+    border-bottom: 2px solid initial;
 }
 .top-bar a:hover{
- border-bottom: 2px solid #cf6d17;
+
+ border-bottom: 3px solid #cf6d17;
 }
 
 ul{
@@ -75,7 +109,7 @@ ul{
     color: white;
     font-size: 52px;
     margin-left: 12.4%;
-    margin-top: 21%;
+    margin-top: 20.8%;
     position: absolute;
 }
 
@@ -105,9 +139,682 @@ ul{
 
 }
 
-
 .header-buttons:hover, header-buttons:active{
     background-color: #bc6316;
+    cursor: pointer;
     color: #fff;
 }
 
+.section-features{
+    height: 550px;
+}
+.row-meal-plan{
+    margin-top: 30px;
+    width: 1100px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.meal-plan-items{
+    width:222px;
+    height: 300px;
+}
+ion-icon{
+    width: 80px;
+    height: 80px;
+    color:#cf6d17;
+    --ionicon-stroke-width: 20px;
+}
+.font{
+    font-family: "Roboto", sans-serif;
+    font-weight: 270;
+    font-style: normal;
+}
+.section-meal{
+    height: 600px;
+    margin-top: 4%;
+    background-color:rgb(0, 0, 0) ;
+    
+}
+.section-meal-ul{  
+    width: 100%;
+    height: 300px;
+    display: flex;
+    
+}
+.section-meal-ul li{
+    list-style: none;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.section-meal-image{
+    width: 100%;
+    height: 100%;
+    flex-shrink: 1;
+    overflow: hidden;
+    background-size: 130%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0.6;
+    transition: opacity 1s, background-size 0.5s;
+}
+.section-meal-image:hover{
+    background-size: 116.5%;
+    opacity: 1;
+}
+
+.img-1{
+    background-image: url("/Images/Omnifood Contents/1.jpg" );
+}
+.img-2{
+    background-image: url("/Images/Omnifood Contents/2.jpg" );
+}
+.img-3{
+    background-image: url("/Images/Omnifood Contents/3.jpg" );
+}
+.img-4{
+    background-image: url("/Images/Omnifood Contents/4.jpg" );
+}
+.img-5{
+    background-image: url("/Images/Omnifood Contents/5.jpg" );
+}
+.img-6{
+    background-image: url("/Images/Omnifood Contents/6.jpg" );
+}
+.img-7{
+    background-image: url("/Images/Omnifood Contents/7.jpg" );
+}
+.img-8{
+    background-image: url("/Images/Omnifood Contents/8.jpg" );
+}
+
+.section-steps{
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 700px;
+    background-color:rgb(241, 241, 241) ;
+    
+}
+.div-steps-img{ 
+    display: flex;
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    margin-top: 4%;
+    margin-left: 22%;
+    background-size: 49%;
+    background-position: cover;
+    background-repeat: no-repeat;
+}
+.section-steps-img{
+    background-image: url("/Images/Omnifood Contents/app-iPhone.png");
+}
+.div-text-container{
+    display: flex;
+    align-content:space-around;
+    justify-content: space-around;
+    flex-direction: column;
+    float: right;
+    height: 300px;
+    margin-top: 5%;
+    margin-right: 4%;
+    position: relative;
+}
+.h3-number-steps{
+    font-family: "Roboto", sans-serif;
+    font-weight: 340;
+    font-style: normal;
+    font-size: 30px;
+    color: #cf6d17;
+    margin-left: 5%;
+}
+
+.div-steps-text{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    
+    width: 490px;
+    height: 50px;
+}
+.div-div-text{
+    width: 300px;
+    height: 40px;
+    text-align: none;
+    margin-left: 60%;
+}
+
+.div-in-div-steps{
+    position: relative;
+    min-width: 50px;
+    height: 50px;
+    border: 2px solid #cf6d17;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 270%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div-steps-text p{
+    font-family: "Roboto", sans-serif;
+    font-weight: 240;
+    font-style: normal;
+    font-size: 20px;
+    margin-left:5%;
+}
+.div-buttons-google{
+    position: relative;
+    width: 200px;
+    height: 100px;
+    background-position: cover;
+    margin-bottom: 70px;
+    
+}
+.div-buttons-google img{
+    width: 155px;
+    height: 74.5px;
+    padding-bottom: 5%;
+}
+.div-buttons-apple{
+    position: relative;
+    height: 100px;
+    background-position: cover;
+    
+}
+.div-buttons-apple img{
+    position: relative;
+    width: 160px;
+    height: 100px;
+    background-position: cover;
+    
+}
+
+.div-buttons-positioning{
+    margin-top: 31%;
+    margin-left: 53.6%;
+    width: 500px;
+    justify-content: space-between;
+}
+
+
+.section-cities{
+    max-width: 1140px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.cities-div{
+    width: 1150px;
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    justify-content: space-around;
+}
+.city-sections{
+    width: 250px;
+    height: 400px;
+}
+.city-1{  
+}
+.city-2{ 
+}
+.city-3{ 
+}
+.city-4{ 
+}
+.city-img{
+    width: 250px;
+    height: 160px;
+    border: 1px solid black;
+    border-style: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+.section-cities h3{
+    font-family: "Roboto", sans-serif;
+    font-weight: 240;
+    font-style: normal;
+    margin-top: 3%;
+    font-size: 25px;
+}
+.section-cities ion-icon{
+    width: 20px;
+    height: 20px;
+    color:#cf6d17;
+    --ionicon-stroke-width: 20px;
+}
+.city-row{
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+}
+.city-links{
+    color: #cf6d17;
+}
+.city-links:hover{
+    color: black;
+    text-decoration: none;
+}
+.city-features{
+    margin-top: 5%;
+    width: 200px;
+    height:30px;
+    margin-left: 4%;
+}
+.city-features p{
+    font-family: "Roboto", sans-serif;
+    font-weight: 240;
+    font-style: normal;
+    margin-left: 4%;
+    font-size: 20px;
+}
+
+.section-testimonials{
+    height: 530px;
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0, 0, 0, 0.8)), url("/Images/Omnifood Contents/back-customers.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.section-testimonials h3{
+    font-family: "Roboto", sans-serif;
+    font-weight: 240;
+    font-style: normal;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 5%;
+    color: #fff;
+
+}
+.section-testimonials h3:after{
+    display: block;
+    height: 2px;
+    text-align: center;
+    width: 100px;
+    background-color: #e67e22;
+    content: " ";
+    margin: auto;
+    margin-top: 30px;
+}
+.testimonials-container{
+    display: flex;
+    width: 1200px;
+    height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+    justify-content: space-around;
+}
+
+.testimonial-boxes{
+    width: 360px;
+    height: 350px;
+}
+.testimony-1{
+    
+}
+.testimony-2{
+   
+}
+.testimony-3{
+    
+}
+.section-testimonials p{
+    font-family: "Roboto", sans-serif;
+    font-weight: 240;
+    font-style: normal;
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: -20px;
+}
+.section-testimonials blockquote{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 18.6px;
+    color:#fff
+}
+.section-testimonials cite{
+    display: flex;
+    flex-direction: row;
+    margin-top: 14%;
+}
+.section-img-pfp{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+.price-container{
+    height: 780px;
+    background-color: #f4f4f4;
+}
+.price-row{
+    margin-top:2.5% ;
+    max-width: 1140px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.price-row-container{
+    width: 300px;
+    height: 450px;
+    border-radius: 10px;
+    border-bottom: 1px solid #e8e8e8;
+    box-shadow: 0 2px 2px #cac5c5;
+}
+.price-item-1{
+    background-color: #fcfcfc;
+}
+.price-item-2{
+    background-color: #fcfcfc;
+}
+.price-item-3{
+    background-color: #fcfcfc;
+}
+.price-row-container h3{
+    font-family: "Roboto", sans-serif;
+    font-weight: 240;
+    font-style: normal;
+    font-size: 25px; 
+}
+.price-div{
+    display: flex;
+    flex-direction: row;
+}
+.span-style-price{
+    margin-left: 21%;
+    margin-top: 9%;
+    height: 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 240;
+    font-style: normal;
+    font-size: 20px;
+    width: 70px;
+    padding-top: 15px;
+    padding-left: 20px;
+}
+.price-row-container p{
+    font-family: "Roboto", sans-serif;
+    font-weight: 240;
+    font-style: normal;
+    font-size: 50px;
+    width: 70px;
+    padding-top: 15px;
+    padding-left:10px;
+}
+.price-row-container ion-icon{
+    width: 50px;
+    height: 20px;
+    color:#cf6d17;
+    --ionicon-stroke-width: 20px;
+}
+
+.price-row-container ul{
+    display: flex;
+   flex-direction: column; 
+}
+.price-row-container li{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    padding-left: 2%;
+    padding-bottom: 2%;
+    padding-top: 5%;
+}
+.sign-up-div{
+    width: 200px;
+    height: 100px;
+    padding: 5%;;
+   margin-left: auto;
+   margin-right: auto; 
+}
+.sign-up-btn-pre{
+    border-radius: 100px;
+    width: 170px;
+    height: 50px;
+    padding: 15px;
+    font-size: 17px;
+    font-optical-sizing: auto;
+    border: 1px solid #cf6d17;
+    font-weight: 200;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #e67e22;
+    color: white;
+}
+.sign-up-btn-pre:hover{
+    background-color:  #b55f14;
+    cursor: pointer;
+}
+.sign-up-btn-other{
+    border-radius: 100px;
+    width: 170px;
+    height: 50px;
+    padding: 15px;
+    font-size: 17px;
+    font-optical-sizing: auto;
+    border: 1px solid #cf6d17;
+    font-weight: 200;
+    display: inline-block;
+    text-decoration: none;
+    background-color: initial;
+    color: #cf6d17;
+}
+.sign-up-btn-other:hover{
+    background-color:  #b55f14;
+    color: white;
+    cursor: pointer;
+}
+
+.map-box{
+    display: flex;
+    flex-wrap: wrap;
+    background-size: contain;
+    height: 560px;
+    width: 100%;
+    background-color: bisque;
+    margin-top: 0.1%;
+  
+}
+iframe{
+    position:absolute;
+    object-fit: cover;
+    width:100%;
+  }
+
+.form-box{
+    margin-top: 1%;
+    margin-left: 4%;
+    width: 682px;
+    height: 490px;
+    float: right;
+    background-color: #e8e8e8;
+    opacity: 0.8;
+    z-index: 10;
+}
+.form{
+    display: flex;
+    width: 660px;
+    height: 350px;
+    background-color: initial;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+   
+}
+.form label{
+    font-family: "Roboto", sans-serif;
+    font-weight: 240;
+    font-style: normal;
+    font-size: 25px; 
+}
+.contact-form{
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 3%;
+}
+.info-row{
+    display: flex;
+    padding-left: 30px;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+.info-row select{
+    width: 200px;
+}
+.info-row-btn{
+    border-radius: 100px;
+    width: 120px;
+    height: 40px;
+    padding: 9px;
+    font-size: 17px;
+    font-optical-sizing: auto;
+    border: 1px solid #cf6d17;
+    font-weight: 200;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #e67e22;
+    color: white;
+}
+.info-row-btn:hover{
+    background-color:  #b55f14;
+    cursor: pointer;
+}
+#text-boxes{
+    width: 400px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+*:focus {outline: none;}
+
+#message{
+    width: 200px;
+}
+.font-checkbox{
+    font-family: "Roboto", sans-serif;
+    font-weight: 240;
+    font-style: normal;
+    font-size: 19px;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+textarea{
+    height: 100px;
+}
+input[type=checkbox]{
+    margin: 10px 5px 10px 0;
+}
+
+.footer{
+    height: 192px;
+    background-color: #333;
+    padding: 50px;
+}
+.footer-row{
+    width: 400px;
+     height: 40px;
+     display: flex;
+     flex-direction: row;
+}
+.footer-1-of-2{
+    width: 420px;
+    height: 40px;
+}
+.footer-1-of-2 ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 39%;
+    width: 350px;
+    margin-top: 6%;
+}
+.footer-1-of-2 a{
+    font-family: "Roboto", sans-serif;
+    font-weight: 340;
+    font-style: normal;
+    font-size: 15px; 
+    color:grey ;
+    text-decoration: none;
+}
+.footer-1-of-2 a:hover{
+    color: #ccc;
+}
+.footer-2-of-2 ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+    margin-left: 39%;
+    width: 200px;
+    margin-top: 10%;
+}
+.footer-2-of-2{
+    width: 420px;
+    margin-left: 170%;
+    height: 40px;
+}
+.footer-2-of-2 a{
+    font-family: "Roboto", sans-serif;
+    font-weight: 340;
+    font-style: normal;
+    font-size: 15px; 
+    text-decoration: none;
+}
+.footer-2-of-2 ion-icon:hover{
+    color: #f1f1f1;
+}
+.footer-row ion-icon{
+    color: #939393;
+    width: 50px;
+    height: 20px;
+}
+.copy-right{
+    width: 400px;
+    height: 50px;
+    margin-top: 2%;
+    margin-left: 40%;
+    
+}
+.copy-right a{
+    font-family: "Roboto", sans-serif;
+    font-weight: 340;
+    font-style: normal;
+    color:grey;
+    font-size: 15px; 
+    text-decoration: none;
+}
+.copy-right a:hover{
+    color: #f1f1f1;
+}
